@@ -1,11 +1,11 @@
-name: Lighthouse CI Action
+name: Lighthouse CI
 on: push
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - uses: treosh/lighthouse-ci-action@v9
-      - name: Audit URLs using Lighthouse
+      - uses: actions/checkout@v3
+      - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
